@@ -1,167 +1,153 @@
-<!-- index.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Guardian Lead Safety & Environmental Services | Cleveland, OH</title>
-  <meta name="description" content="Guardian Lead Safety helps Cleveland property owners, landlords, and daycare centers achieve lead-safe certification. ODH-licensed, HUD/EPA compliant, fast turnaround.">
-  <link rel="stylesheet" href="assets/style.css">
+  <meta name="description" content="Guardian Lead Safety helps Cleveland property owners, managers, and child-care centers achieve lead-safe certification. ODH-licensed, HUD/EPA compliant. Transparent pricing, fast turnaround, multi-unit discounts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
-    <div class="wrap container">
-      <a class="brand" href="index.html">Guardian Lead Safety</a>
-      <ul style="margin-left:auto">
-        <li class="has-sub">
-          <a class="link" href="services/lead-risk-assessment.html">Services</a>
-          <div class="submenu">
-            <a href="services/lead-risk-assessment.html">Lead Risk Assessment</a>
-            <a href="services/lead-based-paint-inspection.html">Lead-Based Paint Inspection</a>
-            <a href="services/clearance-exam.html">Clearance Exam</a>
-            <a href="services/dust-soil-sampling.html">Dust / Soil Sampling</a>
-            <a href="services/daycare-facility.html">Daycare Facility Assessment</a>
-            <a href="services/20-year-exemption.html">20-Year Exemption</a>
-          </div>
-        </li>
-        <li class="has-sub">
-          <a class="link" href="assistance/index.html">Assistance</a>
-          <div class="submenu">
-            <a href="assistance/lead-safe-home-fund.html">Lead Safe Home Fund</a>
-            <a href="assistance/city-lhc.html">City LHC Grants</a>
-            <a href="assistance/county.html">Cuyahoga County Program</a>
-            <a href="assistance/state-federal.html">State & Federal Programs</a>
-            <a href="assistance/daycare.html">Daycare-Specific Support</a>
-          </div>
-        </li>
-        <li class="has-sub">
-          <a class="link" href="process/prep.html">Process</a>
-          <div class="submenu">
-            <a href="process/timeline.html">Timeline</a>
-            <a href="process/prep.html">Prep Checklist</a>
-            <a href="process/after.html">After the Visit</a>
-            <a href="process/faq.html">FAQs</a>
-          </div>
-        </li>
-        <li class="has-sub">
-          <a class="link" href="resources/index.html">Resources</a>
-          <div class="submenu">
-            <a href="resources/lead-safe-cle.html">Lead-Safe CLE</a>
-            <a href="resources/odh.html">Ohio Dept. of Health</a>
-            <a href="https://www.epa.gov/lead/renovation-repair-and-painting-program" target="_blank" rel="noopener">EPA RRP</a>
-            <a href="https://www.hud.gov/program_offices/healthy_homes/enforcement/lbp" target="_blank" rel="noopener">HUD Lead</a>
-          </div>
-        </li>
-        <li><a class="link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+  <!-- Site Header / Nav -->
+  <header class="site-header">
+    <div class="container flex-between">
+      <a href="index.html" class="logo" aria-label="Guardian Lead Safety">
+        <span class="logo-mark">🛡️</span>
+        <span class="logo-text">Guardian Lead Safety</span>
+      </a>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="container">
-      <h1>Lead-Safe Homes for Cleveland Families</h1>
-      <p class="muted">ODH Licensed • HUD/EPA Compliant • Fast, Transparent, Affordable</p>
-      <div class="hero-cta">
-        <a href="contact.html" class="btn btn-primary">Schedule Now</a>
-        <a href="services/lead-risk-assessment.html" class="btn btn-secondary">Learn More</a>
-      </div>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="assistance/index.html">Assistance</a></li>
+          <li>
+            <a href="services/index.html" aria-haspopup="true" aria-expanded="false">Services</a>
+            <ul class="submenu" role="menu" aria-label="Services">
+              <li role="none"><a role="menuitem" href="services/lead-risk-assessment.html">Lead Risk Assessment</a></li>
+              <li role="none"><a role="menuitem" href="services/lead-clearance-exam.html">Lead Clearance Exam</a></li>
+              <li role="none"><a role="menuitem" href="services/dust-wipe-sampling.html">Lead Dust Wipe Sampling</a></li>
+              <li role="none"><a role="menuitem" href="services/renovation-consulting.html">Renovation Consulting (RRP)</a></li>
+              <li role="none"><a role="menuitem" href="services/multi-unit-programs.html">Multi-Unit / Portfolio</a></li>
+              <li role="none"><a role="menuitem" href="services/child-care-schools.html">Child-Care & Schools</a></li>
+            </ul>
+          </li>
+          <li><a href="resources/index.html">Resources</a></li>
+          <li><a href="contact.html" class="btn btn-primary">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <!-- How It Works Section -->
-  <section class="section alt">
+  <!-- Hero -->
+  <section class="hero">
     <div class="container">
-      <h2>How It Works</h2>
-      <div class="steps">
-        <div class="step">
-          <h3>1. Schedule Visit</h3>
-          <p class="muted">Book online or by phone. Most appointments within a week.</p>
-        </div>
-        <div class="step">
-          <h3>2. On-Site Assessment</h3>
-          <p class="muted">Our ODH-licensed inspector collects samples and documents conditions.</p>
-        </div>
-        <div class="step">
-          <h3>3. Lab Testing</h3>
-          <p class="muted">Certified laboratory analyzes dust and paint samples for lead content.</p>
-        </div>
-        <div class="step">
-          <h3>4. Report & Guidance</h3>
-          <p class="muted">You receive a full report with recommendations for compliance or clearance.</p>
-        </div>
+      <h1 class="h1">Lead-Safe Inspections & Risk Assessments</h1>
+      <p class="lead">
+        Helping Cleveland property owners, landlords, and child-care centers achieve Lead-Safe Certification. Licensed, compliant, and affordable.
+      </p>
+      <div class="hero-cta">
+        <a href="contact.html" class="btn btn-primary">Request an Inspection</a>
+        <a href="resources/lead-safe-cle.html" class="btn btn-ghost">Learn About Lead-Safe CLE</a>
       </div>
-      <p class="muted" style="margin-top:10px"><em>Report issued ≈ 7–10 days after visit. Rush options available.</em></p>
     </div>
   </section>
 
-  <!-- Services Overview -->
-  <section class="section">
+  <!-- Services Preview -->
+  <section class="section alt">
     <div class="container">
-      <h2>Our Services</h2>
-      <div class="grid cards">
+      <h2 class="h2 center">Our Services</h2>
+      <div class="grid-3">
         <div class="card">
-          <h3>Lead Risk Assessment</h3>
-          <p class="muted">Comprehensive inspection, dust wipe sampling, and risk evaluation.</p>
+          <h3 class="h3">Lead Risk Assessment</h3>
+          <p>ODH-licensed inspections and risk assessments for rentals, homes, and child-care facilities.</p>
           <a href="services/lead-risk-assessment.html" class="btn btn-outline">Learn More</a>
         </div>
         <div class="card">
-          <h3>Lead-Based Paint Inspection</h3>
-          <p class="muted">XRF or paint chip analysis to identify hazardous lead-based coatings.</p>
-          <a href="services/lead-based-paint-inspection.html" class="btn btn-outline">Learn More</a>
+          <h3 class="h3">Lead Clearance Exam</h3>
+          <p>Post-renovation and post-repair clearance exams with HUD/EPA dust wipe sampling.</p>
+          <a href="services/lead-clearance-exam.html" class="btn btn-outline">Learn More</a>
         </div>
         <div class="card">
-          <h3>Clearance Exams</h3>
-          <p class="muted">Required clearance exams after remediation or renovation.</p>
-          <a href="services/clearance-exam.html" class="btn btn-outline">Learn More</a>
+          <h3 class="h3">Dust Wipe Sampling</h3>
+          <p>HUD/EPA compliant dust wipe testing with accredited lab analysis and clear results.</p>
+          <a href="services/dust-wipe-sampling.html" class="btn btn-outline">Learn More</a>
         </div>
         <div class="card">
-          <h3>Dust / Soil Sampling</h3>
-          <p class="muted">Lab-certified testing for floor dust, window sills, and yard soil.</p>
-          <a href="services/dust-soil-sampling.html" class="btn btn-outline">Learn More</a>
+          <h3 class="h3">Renovation Consulting</h3>
+          <p>Guidance for EPA RRP compliance, safe work practices, and clearance planning.</p>
+          <a href="services/renovation-consulting.html" class="btn btn-outline">Learn More</a>
         </div>
         <div class="card">
-          <h3>Daycare Facility Assessments</h3>
-          <p class="muted">Specialized assessments for childcare centers and preschools.</p>
-          <a href="services/daycare-facility.html" class="btn btn-outline">Learn More</a>
+          <h3 class="h3">Multi-Unit / Portfolio</h3>
+          <p>Discounts and streamlined programs for landlords and property managers with 3+ units.</p>
+          <a href="services/multi-unit-programs.html" class="btn btn-outline">Learn More</a>
         </div>
         <div class="card">
-          <h3>20-Year Exemption</h3>
-          <p class="muted">Certification for properties that qualify under HUD/ODH exemption rules.</p>
-          <a href="services/20-year-exemption.html" class="btn btn-outline">Learn More</a>
+          <h3 class="h3">Child-Care & Schools</h3>
+          <p>Specialized inspections and reporting for child-care centers, preschools, and schools.</p>
+          <a href="services/child-care-schools.html" class="btn btn-outline">Learn More</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Assistance Teaser -->
-  <section class="section alt">
-    <div class="container">
-      <h2>Financial Assistance</h2>
-      <p class="muted">Cleveland, Cuyahoga County, and State programs can help cover the cost of lead-safe work.</p>
-      <a href="assistance/index.html" class="btn btn-primary">Explore Programs</a>
-    </div>
-  </section>
-
-  <!-- Contact CTA -->
+  <!-- About -->
   <section class="section">
-    <div class="container" style="text-align:center">
-      <h2>Ready to Get Started?</h2>
-      <p class="muted">Protect your family and meet local compliance requirements today.</p>
-      <a href="contact.html" class="btn btn-primary">Schedule Your Inspection</a>
+    <div class="container">
+      <h2 class="h2 center">Why Choose Guardian?</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3 class="h3">Licensed & Experienced</h3>
+          <p>State of Ohio ODH-licensed risk assessors with deep knowledge of HUD/EPA rules.</p>
+        </div>
+        <div class="card">
+          <h3 class="h3">Fast Turnaround</h3>
+          <p>Reports issued within 7–10 days. Rush options available.</p>
+        </div>
+        <div class="card">
+          <h3 class="h3">Transparent Pricing</h3>
+          <p>Flat fees, no hidden costs, and discounts for multiple units or portfolios.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p><strong>Guardian Lead Safety</strong> – Serving Greater Cleveland & NE Ohio</p>
-    <p>Call (216) 800-8259 • <a href="mailto:info@glses.com">info@glses.com</a> • <a href="contact.html">Schedule Now</a></p>
-    <p>ODH Licensed • HUD/EPA Compliant</p>
-    <p style="margin-top:10px;font-size:14px;color:#94a3b8">© <span id="year"></span> Guardian Lead Safety & Environmental Services</p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo-row">
+          <span class="logo-mark">🛡️</span>
+          <span class="logo-text">Guardian Lead Safety</span>
+        </div>
+        <p class="muted">Cleveland, Ohio • ODH-licensed • HUD/EPA compliant</p>
+      </div>
+      <div>
+        <h4 class="h4">Navigate</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="assistance/index.html">Assistance</a></li>
+          <li><a href="services/index.html">Services</a></li>
+          <li><a href="resources/index.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="h4">Get in touch</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:info@glses.com">info@glses.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container small muted center">© <span id="y"></span> Guardian Lead Safety</div>
   </footer>
 
-  <!-- Script -->
-  <script src="assets/app.js" defer></script>
+  <script src="app.js" defer></script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
