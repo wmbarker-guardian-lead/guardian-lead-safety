@@ -11,17 +11,17 @@
   <!-- Header -->
   <header class="site-header">
     <div class="container flex-between">
-      <a href="index.html" class="logo">
+      <a href="index.html" class="logo" aria-label="Guardian Lead Safety">
         <span class="logo-mark">🛡️</span>
         <span class="logo-text">Guardian Lead Safety</span>
       </a>
-      <nav>
+      <nav aria-label="Main">
         <ul class="nav-list">
           <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="assistance/index.html">Assistance</a></li>
           <li><a href="services/index.html">Services</a></li>
           <li><a href="resources/index.html">Resources</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="btn btn-primary">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -57,7 +57,7 @@
     </div>
   </section>
 
-  <!-- Services Grid -->
+  <!-- Services -->
   <section class="section">
     <div class="container">
       <h2 class="h2 center">Our Services</h2>
@@ -74,11 +74,10 @@
 
   <!-- Footer -->
   <footer class="site-footer">
-    <div class="container center small muted">© <span id="y"></span> Guardian Lead Safety</div>
+    <div class="container center small muted">© <span id="year"></span> Guardian Lead Safety</div>
   </footer>
 
   <!-- Scripts -->
   <script src="assets/app.js" defer></script>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>

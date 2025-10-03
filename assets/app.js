@@ -1,29 +1,23 @@
-// app.js – handles interactive nav + mobile dropdowns
-
+// app.js – handle nav dropdowns + footer year
 document.addEventListener("DOMContentLoaded", () => {
-  // Handle dropdowns on mobile
-  const navItems = document.querySelectorAll("nav ul li.has-sub > a.link");
+  // Dropdown toggle (future-proof if submenus exist)
+  const navItems = document.querySelectorAll("nav ul li.has-sub > a");
 
   navItems.forEach(item => {
     item.addEventListener("click", e => {
-      // Prevent link from following if submenu exists
       if (item.nextElementSibling && item.nextElementSibling.classList.contains("submenu")) {
         e.preventDefault();
-
-        // Close all other open menus
         document.querySelectorAll("nav ul li .submenu.open").forEach(openMenu => {
           if (openMenu !== item.nextElementSibling) {
             openMenu.classList.remove("open");
           }
         });
-
-        // Toggle this one
         item.nextElementSibling.classList.toggle("open");
       }
     });
   });
 
-  // Close menus if clicked outside
+  // Close if clicked outside
   document.addEventListener("click", e => {
     if (!e.target.closest("nav ul li.has-sub")) {
       document.querySelectorAll("nav ul li .submenu.open").forEach(openMenu => {
@@ -32,9 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Footer year auto-update
+  // Footer year
   const yearEl = document.getElementById("year");
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 });
