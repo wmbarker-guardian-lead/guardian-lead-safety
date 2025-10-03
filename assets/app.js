@@ -1,32 +1,8 @@
-// app.js – handle nav dropdowns + footer year
-document.addEventListener("DOMContentLoaded", () => {
-  // Dropdown toggle (future-proof if submenus exist)
-  const navItems = document.querySelectorAll("nav ul li.has-sub > a");
-
-  navItems.forEach(item => {
-    item.addEventListener("click", e => {
-      if (item.nextElementSibling && item.nextElementSibling.classList.contains("submenu")) {
-        e.preventDefault();
-        document.querySelectorAll("nav ul li .submenu.open").forEach(openMenu => {
-          if (openMenu !== item.nextElementSibling) {
-            openMenu.classList.remove("open");
-          }
-        });
-        item.nextElementSibling.classList.toggle("open");
-      }
-    });
-  });
-
-  // Close if clicked outside
-  document.addEventListener("click", e => {
-    if (!e.target.closest("nav ul li.has-sub")) {
-      document.querySelectorAll("nav ul li .submenu.open").forEach(openMenu => {
-        openMenu.classList.remove("open");
-      });
-    }
-  });
-
-  // Footer year
-  const yearEl = document.getElementById("year");
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
+document.querySelectorAll('nav li.has-sub').forEach(li=>{
+  const a=li.querySelector('.link');
+  a.addEventListener('click',e=>{e.preventDefault();li.classList.toggle('open');document.querySelectorAll('nav li.has-sub').forEach(o=>{if(o!==li)o.classList.remove('open');});});
+  li.addEventListener('mouseenter',()=>li.classList.add('open'));
+  li.addEventListener('mouseleave',()=>li.classList.remove('open'));
 });
+document.addEventListener('click',e=>{if(!e.target.closest('nav'))document.querySelectorAll('nav li.has-sub').forEach(li=>li.classList.remove('open'));});
+const y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear();
