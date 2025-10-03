@@ -9,7 +9,7 @@ h1,h2{color:#0f172a;margin:0 0 14px}h1{font-size:40px;font-weight:900}h2{font-si
 .btn-primary{background:var(--brand);color:#fff}.btn-primary:hover{background:var(--brand-700);transform:translateY(-1px)}
 .btn-outline{border:2px solid var(--brand);color:var(--brand)}.btn-outline:hover{background:var(--brand);color:#fff}
 ul.checklist{list-style:none;padding:0;margin:0}ul.checklist li{margin:8px 0 0;padding-left:22px;position:relative}
-ul.checklist li::before{content:"✔";position:absolute;left:0;color:var(--brand);font-weight:800}
+ul.checklist li::before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:800}
 table{width:100%;border-collapse:collapse}th,td{padding:12px;border-bottom:1px solid var(--line);text-align:left}
 footer{background:#0f172a;color:#cbd5e1;text-align:center;padding:32px 24px}footer a{color:#facc15;text-decoration:none}
 @media(min-width:900px){.two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px}}
