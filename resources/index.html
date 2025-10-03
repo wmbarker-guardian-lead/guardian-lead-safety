@@ -4,13 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Resources | Guardian Lead Safety, Cleveland OH</title>
-  <meta name="description" content="Lead-safe housing resources for Cleveland property owners, landlords, and child-care centers." />
+  <meta name="description" content="Lead-safe housing resources for Cleveland property owners, landlords, and child-care providers. Access City of Cleveland and Ohio Department of Health guidance." />
   <link rel="stylesheet" href="../assets/style.css" />
 </head>
 <body>
+  <!-- Header -->
   <header class="site-header">
     <div class="container flex-between">
-      <a href="../index.html" class="logo"><span class="logo-mark">🛡️</span><span class="logo-text">Guardian Lead Safety</span></a>
+      <a href="../index.html" class="logo">
+        <span class="logo-mark">🛡️</span>
+        <span class="logo-text">Guardian Lead Safety</span>
+      </a>
       <nav>
         <ul class="nav-list">
           <li><a href="../index.html">Home</a></li>
@@ -23,6 +27,7 @@
     </div>
   </header>
 
+  <!-- Hero -->
   <section class="hero">
     <div class="container">
       <h1 class="h1">Resources</h1>
@@ -30,25 +35,28 @@
     </div>
   </section>
 
+  <!-- Resource Cards -->
   <section class="section">
     <div class="container grid-2">
       <div class="card">
         <h2 class="h2">City of Cleveland</h2>
-        <p>Information on Cleveland’s Lead-Safe Certification program, deadlines, and resources for landlords.</p>
+        <p>Learn about Cleveland’s Lead-Safe Certification program, deadlines, and resources for landlords and property managers.</p>
         <a href="lead-safe-cle.html" class="btn btn-outline">Learn More</a>
       </div>
       <div class="card">
         <h2 class="h2">Ohio Department of Health</h2>
-        <p>State-level guidance and resources from ODH on lead-safe housing and inspections.</p>
+        <p>Explore state-level guidance and resources from ODH on lead-safe housing, risk assessments, and inspections.</p>
         <a href="odh.html" class="btn btn-outline">Learn More</a>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container center small muted">© <span id="y"></span> Guardian Lead Safety</div>
   </footer>
 
+  <!-- Scripts -->
   <script src="../assets/app.js" defer></script>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
